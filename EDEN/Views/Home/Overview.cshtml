@@ -1,0 +1,80 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout-Normal.cshtml";
+    ViewBag.Title = "Over view";
+}
+
+<section id="destroy" class="overview-capture">
+    <div id="destroy-story" class="stroy">
+        <h2>破砕した星系——</h2>
+        <p>火星付近に突如出現した「破滅の星」と呼ばれる巨大なエネルギーの塊、その影響で異常な気象や地殻変動が発生。</p>
+        <p>そして各地で勃発した戦争とテロ行為より、世界は壊滅的な打撃をこうむる。</p>
+        <p>人類自身も、間もなく消えていくかもしれない。</p>  
+    </div>
+</section>
+
+<section id="plan" class="overview-capture">
+    <div id="plan-story1" class="stroy">
+        <h2>地球統一政府</h2>
+        <p>世界政府設立のはこの時点に重要な存在であり、</p>
+        <p>人材、資源、技術を収拾して、妨げとなるのすべてを制圧、「大を生かすために小を犠牲にする」を方針とする。</p>
+    </div>
+    <div id="plan-story2" class="stroy">
+        <h2>地球脱出計画</h2>
+        <p>人類が生きれるために救い道を探し。</p>
+        <p>その結論は宇宙に移民しなければならない、この時点に人類はまだ宇宙空間のことによく知ってないけれど、政府は即刻に巨大な宇宙船の建造を決定した。</p>
+        <p>残り時間は100年、たぶん工作は0から</p>
+    </div>  
+</section>
+
+<section id="felix" class="overview-capture">
+    <div id="felix-story" class="stroy">
+        <h2>フェリクス</h2>
+        <p>遺伝子に改良を施し、</p>
+        <p>高い知能と不老の肉体を持つ新たなる人類。</p>
+        <p>実現不可能な「地球脱出計画」、フェリクスの超人類に任せ、宇宙船をデザインし、複雑な問題を解決しれば。</p>
+        <p>その計画が成功できる。</p>
+    </div>
+</section>
+
+<section id="sion" class="overview-capture">
+    <div id="sion-story" class="stroy">
+        <h2>シオン</h2>
+        <p>地球脱出計画の中心メンバーとして活躍したフェリクスの少女。</p>
+        <p>彼女の人生は、初めてから研究に捧げてきたんだ。</p>
+        <p>この100年間に。</p>
+        <p>彼女がいるこそ、人類は計画を実現できると言っても過言ではない。</p>
+        <p>仕事を終えた彼女は、人がいなくなった世界で余生を過ごすことを望んだ。</p>
+        <p>たっだ外の世界を見るだけだ。</p>
+    </div>
+    <div id="sion-in-hall"  class="element"></div>
+</section>
+
+<section id="ryo" class="overview-capture">
+    <div id="ryo-story" class="stroy">
+        <h2>榛名亮</h2>
+        <p>警備兵士として研究所に配属した准尉。</p>
+        <p>そのナツメについての事件をきっかけで、軍隊に加える。</p>
+        <p>多くの戦闘に活躍して、この壊滅寸前の世界での標準な兵士であり。</p>
+        <p>こころの奥に、まだ何か忘れにはいけないものがあります。</p>
+    </div>
+    <div id="ryo-in-bedroom" class="element"></div>
+</section>
+<section class="blanket">
+
+</section>
+
+@section scripts{
+    <script>
+        $('#destroy').parallax("50%", 0.6);
+
+        $('#plan').parallax("50%", 0.4);
+
+        $('#felix').parallax("90%", 1.3);
+
+        $('#sion').parallax("50%", 0.2);
+        $('#sion-in-hall').parallax("50%", 1.2, true,-10);
+
+        $('#ryo').parallax("50%", 0.2);
+        $('#ryo-in-bedroom').parallax("50%", 1.2, true, -50);
+    </script>
+}

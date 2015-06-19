@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 最后的</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/fontawesome")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body>
+    <div class="board"  id="particles-js">
+
+        <div class="board-content">
+            <div>
+                <ul class="nav-simple">
+                    <li>@Html.ActionLink("overview","Overview","Home")</li>
+                    <li><a>timeline</a></li>
+                    <li><a>resource</a></li>
+                    <li><a>about</a></li>
+                </ul>
+            </div>
+            <div class="show-menu-button" id="index-sub-menu">
+                <button type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="board-title">
+                <span>「それは地球で最後の恋物語」</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="slide-navbar">
+        <div class="slide-navbar-content">
+            <div class="navbar-title">
+                <span>INFO</span>
+            </div>
+            <ul>
+                <li><i class="fa fa-venus-mars"></i><a>character</a></li>
+                <li><i class="fa fa-connectdevelop"></i><a>story</a></li>
+                <li><i class="fa fa-map-marker"></i><a>location</a></li>
+                <li><i class="fa fa-picture-o"></i><a>graphics</a></li>
+                <li><i class="fa fa-barcode"></i><a>product</a></li>
+            </ul>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <footer>
+        <div class="footer-index">
+            <div class="container">
+
+                <div class="footer-index-top">
+                    <p>一个为「eden*」所创建的demo</p>
+                    <div>
+                        <ul class="out-links">
+                            <li><a>Azure</a></li>
+                            <li><a>VisualStudio</a></li>
+                            <li><a>Mirror</a></li>
+                            <li><a>Bootstrap</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-buttons">
+                        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+                        <div><a href="https://twitter.com/share" class="twitter-share-button" data-via="SNeko3000">Tweet</a></div>       
+                    </div>
+                </div>
+
+                <div class="footer-index-bottom">
+                    <p>Web application created by .NET ASP MVC in 2015</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/siteScripts")
+    @Scripts.Render("~/bundles/particle")
+
+    @RenderSection("scripts", required: false)
+
+
+    <div id="fb-root"></div>
+    <script>
+        //facebook button
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        //twitter button
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+        //particles
+    </script>
+
+</body>
+</html>
