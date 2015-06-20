@@ -7215,4 +7215,57 @@ li a:focus {
   background-repeat: no-repeat;
   background-position: 50% -200px;
 }
+#plan-finish {
+  height: 500px;
+  background-image: url('/Content/imgs/overview/ev086_2x.png');
+  background-repeat: no-repeat;
+  background-position: 50% -400px;
+}
+#plan-finish > #plan-finish-story {
+  top: 200px;
+  width: 500px;
+  right: 160px;
+}
+#plan-finish > #radio {
+  position: absolute;
+  left: 150px;
+  height: 100%;
+  width: 400px;
+  background-image: url('/Content/imgs/overview/ev090a01.png');
+  background-repeat: no-repeat;
+  background-position: 50% -200px;
+}
+#plant {
+  height: 500px;
+  background-image: url('/Content/imgs/overview/ev_cut04_2x.png');
+  background-repeat: no-repeat;
+  background-position: 50% -300px;
+}
+#plant > #plant-story {
+  top: 200px;
+  width: 500px;
+  right: 160px;
+}
+#boat {
+  height: 500px;
+  background-image: url('/Content/imgs/overview/ap01_003a16_2x.png');
+  background-repeat: no-repeat;
+  background-position: 50% -300px;
+}
+#boat > #boat-story {
+  top: 200px;
+  width: 500px;
+  left: 160px;
+}
+#egg {
+  height: 500px;
+  background-image: url('/Content/imgs/overview/ev_cut01_2x.png');
+  background-repeat: no-repeat;
+  background-position: 50% -300px;
+}
+#egg > #egg-story {
+  top: 200px;
+  width: 500px;
+  right: 160px;
+}
 /*# sourceMappingURL=bootstrapRedefine.css.map */

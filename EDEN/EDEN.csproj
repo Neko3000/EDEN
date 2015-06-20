@@ -199,10 +199,15 @@
     <Content Include="Content\imgs\index\cage-text5.png" />
     <Content Include="Content\imgs\ev006.png" />
     <Content Include="Content\imgs\gameMenuBack.png" />
+    <Content Include="Content\imgs\overview\ap01_003a16_2x.png" />
     <Content Include="Content\imgs\overview\B003_0005_0012.png" />
     <Content Include="Content\imgs\overview\dark-city.png" />
     <Content Include="Content\imgs\overview\dna_nano_tech-wide.jpg" />
     <Content Include="Content\imgs\overview\ev063a01.png" />
+    <Content Include="Content\imgs\overview\ev086_2x.png" />
+    <Content Include="Content\imgs\overview\ev090a01.png" />
+    <Content Include="Content\imgs\overview\ev_cut01_2x.png" />
+    <Content Include="Content\imgs\overview\ev_cut04_2x.png" />
     <Content Include="Content\imgs\overview\maisou_bg012a01_01_2x.png" />
     <Content Include="Content\imgs\overview\maisou_bg013a01_01_2x.png" />
     <Content Include="Content\imgs\overview\universe.png" />
