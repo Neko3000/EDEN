@@ -22,7 +22,7 @@
         <h2>地球脱出計画</h2>
         <p>人類が生きれるために救い道を探し。</p>
         <p>その結論は宇宙に移民しなければならない、この時点に人類はまだ宇宙空間のことによく知ってないけれど、政府は即刻に巨大な宇宙船の建造を決定した。</p>
-        <p>残り時間は100年、たぶん工作は0から</p>
+        <p>残り時間は100年、経験は0から。</p>
     </div>  
 </section>
 
@@ -31,7 +31,7 @@
         <h2>フェリクス</h2>
         <p>遺伝子に改良を施し、</p>
         <p>高い知能と不老の肉体を持つ新たなる人類。</p>
-        <p>実現不可能な「地球脱出計画」、フェリクスの超人類に任せ、宇宙船をデザインし、複雑な問題を解決しれば。</p>
+        <p>実現不可能な「地球脱出計画」、フェリクスの超人類に任せ、宇宙船をデザインし、複雑な問題を解決すれば。</p>
         <p>その計画が成功できる。</p>
     </div>
 </section>
@@ -53,48 +53,71 @@
     <div id="ryo-story" class="stroy">
         <h2>榛名亮</h2>
         <p>警備兵士として研究所に配属した准尉。</p>
-        <p>そのナツメについての事件をきっかけで、軍隊に加える。</p>
         <p>多くの戦闘に活躍して、この壊滅寸前の世界での標準な兵士であり。</p>
-        <p>こころの奥に、まだ何か忘れにはいけないものがあります。</p>
+        <p>そのナツメについての事件をきっかけで、軍隊に加えました。</p>
+        <p>こころの奥に、まだ何か忘れるにはいけないものがあります。</p>
     </div>
     <div id="ryo-in-bedroom" class="element"></div>
 </section>
 
+<section id="help" class="overview-capture">
+    <div id="help-story" class="stroy">
+        <p>この物語に関する人々で、</p>
+        <p>稲葉少佐とメイドのエリカさんは自分の信念に従って、</p>
+        <p>過去の自分も、今の自分も、そして、未来の自分も、改めて信じてみたい。</p>
+    </div>
+</section>
+
 <section id="plan-finish" class="overview-capture">
     <div id="plan-finish-story" class="stroy">
-        <p>そして、その計画を完成する際に、</p>
-        <p>メイドさんのエリカはシオンの小さい願いを叶えるために、</p>
+        <p>その計画を完成した際に、</p>
         <p>新たな世界のドアを開けてくれました。</p>
         <p>エデンの楽園の。</p>
+        <p>ホントの自由の。</p>
     </div>
     <div id="radio" class="element"></div>
 </section>
 
 <section id="plant" class="overview-capture">
     <div id="plant-story" class="stroy">
-        <p>この他の誰もいない世界で、</p>
+        <span>そして</span>
+        <p class="inline-p">この他の誰もいない世界で、</p>
         <p>わたしたちが野菜を植えて試してた。</p>
     </div>
 </section>
 
 <section id="boat" class="overview-capture">
     <div id="boat-story" class="stroy">
-        <p>この廃墟のみの世界で、</p>
+        <span>そして</span>
+        <p class="inline-p">この廃墟のみの世界で、</p>
         <p>わたしたちがボートをこんで試してた。</p>
     </div>
 </section>
 
 <section id="egg" class="overview-capture">
     <div id="egg-story" class="stroy">
-        <p>このひかりに沈んでる世界で、</p>
+        <span>そして</span>
+        <p class="inline-p">このひかりに沈んでる世界で、</p>
         <p>わたしたちが目玉焼きをやって試してた。</p>
     </div>
 </section>
 
+<section id="end" class="overview-capture">
+    <video autoplay="" loop="" id="end-bg">
+        <source src="~/Content/videos/ev248b01_2x.mp4" type="video/mp4" />
+    </video>
+    <div id="end-story" class="stroy">
+        <p>地球で最後の恋物語はきっとこの他の誰もいない世界で続んでいく、</p>
+        <p>その深い眠りまで...</p>
+        <p>たとえその眠りは間もなくでも。</p>
+    </div>
+</section>
+
+<!--
 <section class="blanket">
 
 </section>
-
+    -->
 @section scripts{
     <script>
         $('#destroy').parallax("50%", 0.6);
@@ -108,6 +131,8 @@
 
         $('#ryo').parallax("50%", 0.2);
         $('#ryo-in-bedroom').parallax("50%", 1.2, true, -50);
+
+        $('#help').parallax("50%", 0.7);
 
         $('#plan-finish').parallax("50%", 0.3);
         $('#radio').parallax("50%", 0.8);
