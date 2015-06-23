@@ -7309,4 +7309,87 @@ li a:focus {
   margin-left: -247px;
   left: 50%;
 }
+.creation-video {
+  width: 100%;
+  text-align: center;
+}
+.video-container {
+  margin: 15px auto;
+  display: inline-block;
+}
+.video-container > .video-rectangle {
+  padding: 5px 5px;
+  display: inline-block;
+  background-color: #1b1b1b;
+  transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -webkit-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+}
+.video-container > .video-rectangle:hover {
+  background-color: #414141;
+}
+.video-info {
+  width: 100%;
+  height: 24px;
+}
+.video-info > .video-info-background {
+  display: inline-block;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+}
+.video-info > .video-info-background:before,
+.video-info > .video-info-background:after {
+  content: " ";
+  display: table;
+}
+.video-info > .video-info-background:after {
+  clear: both;
+}
+.video-info > .video-info-background:before,
+.video-info > .video-info-background:after {
+  content: " ";
+  display: table;
+}
+.video-info > .video-info-background:after {
+  clear: both;
+}
+.video-info > .video-info-background > span {
+  margin-top: 2px;
+  text-align: right;
+  color: white;
+  overflow: hidden;
+  float: right;
+  width: 0;
+  opacity: 0;
+  white-space: nowrap;
+}
+.video-info > .video-info-background > .video-info-button {
+  position: relative;
+  float: right;
+  margin-left: 50px;
+  cursor: pointer;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  background-color: #21bbff;
+  transition: background-color 0.7s ease;
+  -moz-transition: background-color 0.7s ease;
+  -webkit-transition: background-color 0.7s ease;
+  -o-transition: background-color 0.7s ease;
+}
+.video-info > .video-info-background > .video-info-button > i {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: white;
+  font-size: 10px;
+}
+.video-info > .video-info-background > .video-info-button > i.fa-minus {
+  opacity: 0;
+}
+.video-info > .video-info-background > .video-info-button:hover {
+  background-color: #6ed2ff;
+}
 /*# sourceMappingURL=bootstrapRedefine.css.map */

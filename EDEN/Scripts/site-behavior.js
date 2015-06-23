@@ -52,6 +52,58 @@ $('.hall>.hall-text2,.hall>.hall-sion').hover(function () {
     $('.hall>.hall-sion-glow').removeClass('overshow');
 });
 
+//creation page video info click
+$('.video-info-button').click(
+    function (e) {
+        if(!$('.video-info-button').hasClass('showing'))
+        {
+            $('.video-info-background>span').animate({
+                width: '320px',
+                opacity: 1,
+                'margin-left': '30px',
+                'margin-right': '5px'
+            }, 1000, 'easeOutQuad');
+
+            $('.video-info-button').animate({
+                'margin-left':0,
+            }, 1000, 'easeOutQuad');
+
+            $('.video-info-button .fa-plus').animate({
+                opacity: 0,
+            }, 500, 'easeOutQuad', function () {
+                $('.video-info-button .fa-minus').animate({
+                    opacity: 1,
+                }, 700, 'easeOutQuad');
+            });
+
+            $('.video-info-button').toggleClass('showing');
+        }
+        else
+        {
+            $('.video-info-background>span').animate({
+                width: '0px',
+                opacity: 0,
+                'margin-left': '0px',
+                'margin-right': '0px'
+            }, 1000, 'easeOutQuad');
+
+            $('.video-info-button').animate({
+                'margin-left': '50px',
+            }, 1000, 'easeOutQuad');
+
+            $('.video-info-button .fa-minus').animate({
+                opacity: 0,
+            }, 500, 'easeOutQuad', function () {
+                $('.video-info-button .fa-plus').animate({
+                    opacity: 1,
+                }, 700, 'easeOutQuad');
+            });
+
+            $('.video-info-button').toggleClass('showing');
+        }
+    }
+    );
+
 $(function () {
 
     //door open spy

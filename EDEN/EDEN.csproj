@@ -216,6 +216,7 @@
     <Content Include="Content\imgs\overview\maisou_bg012a01_01_2x.png" />
     <Content Include="Content\imgs\overview\maisou_bg013a01_01_2x.png" />
     <Content Include="Content\imgs\overview\universe.png" />
+    <Content Include="Content\imgs\resource\ev141b02.png" />
     <Content Include="Content\videos\ev248b01_2x.mp4" />
     <Content Include="Content\videos\final-bg.mp4" />
     <Content Include="Content\imgs\index\final-bg.png" />
@@ -274,6 +275,7 @@
     <Content Include="Content\themes\base\tabs.css" />
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Content\videos\「この星の空に、最後の軌跡を」.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -432,6 +434,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout-Normal.cshtml" />
     <Content Include="Views\Home\Overview.cshtml" />
+    <Content Include="Views\Home\Creation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
