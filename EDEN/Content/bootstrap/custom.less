@@ -828,13 +828,20 @@ li{
         >span{
             margin-top:2px;
             text-align:right;
-            color:white;
+            color:darken(white,15%);
+            //color:#c6c6c6;
             overflow:hidden;
             float:right;
             width:0;
             opacity:0;
             white-space:nowrap;
+
+            .colorSmooth(0.8s);
+            &:hover{
+                color:white;
+            }
         }
+        
         >.video-info-button{
             position:relative;
             float:right;
@@ -858,6 +865,83 @@ li{
             }
             &:hover{
                 background-color:lighten(#21bbff,15%);
+            }
+        }
+    }
+}
+
+//detail
+.page-sidebar{
+    position:fixed;
+    width:100px;
+    left:0;
+    top:100px;
+    z-index:10;
+    >ul.side-nav{
+        >li.side-nav-selection{
+            margin-bottom:5px;
+            margin-right:30px;
+            padding:5px 10px 5px 0px;
+            background-color:@deep-grayBlack-b2;
+            .allSmooth(0.7s);
+            >a{
+                text-align:right;
+                padding:0;
+                color:white;
+                background-color:transparent;
+                &:hover,&focus{
+                    background-color:transparent;
+                }
+             }
+            &.active{
+                margin-right:0;
+                background-color:#21bbff;
+            }
+            &:hover,&:focus{
+                margin-right:20px;
+                background-color:#ff2583;
+            }
+        }
+    }
+}
+.page-content-area{
+    position:relative;
+    padding-left:120px;
+    .page-content{
+        border-left:1px solid #d3d3d3;
+        width:100%;
+        padding:0px 10px;
+        margin:20px 0;
+        .detail-head{
+            padding:5px;
+            margin-bottom:20px;
+            background-color:#212121;
+            span{
+                font-size:18px;
+                color:white;
+               
+            }
+        }
+        .detail-info{
+            margin-left:30px;
+            padding-bottom:5px;
+            border-left:1px solid #1b1b1b;
+            >h2{
+                display:inline-block;
+                text-align:left;
+
+                margin:0 0 5px 0;
+                padding:5px 100px 5px 5px;
+
+                color:white;
+                font-size:15px;
+                
+                background-color:#212121;
+            }
+            >p{
+                margin:0 0 0 5px;
+
+                font-size:13px;
             }
         }
     }

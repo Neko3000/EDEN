@@ -7358,12 +7358,19 @@ li a:focus {
 .video-info > .video-info-background > span {
   margin-top: 2px;
   text-align: right;
-  color: white;
+  color: #d9d9d9;
   overflow: hidden;
   float: right;
   width: 0;
   opacity: 0;
   white-space: nowrap;
+  transition: color 0.8s ease;
+  -moz-transition: color 0.8s ease;
+  -webkit-transition: color 0.8s ease;
+  -o-transition: color 0.8s ease;
+}
+.video-info > .video-info-background > span:hover {
+  color: white;
 }
 .video-info > .video-info-background > .video-info-button {
   position: relative;
@@ -7391,5 +7398,78 @@ li a:focus {
 }
 .video-info > .video-info-background > .video-info-button:hover {
   background-color: #6ed2ff;
+}
+.page-sidebar {
+  position: fixed;
+  width: 100px;
+  left: 0;
+  top: 100px;
+  z-index: 10;
+}
+.page-sidebar > ul.side-nav > li.side-nav-selection {
+  margin-bottom: 5px;
+  margin-right: 30px;
+  padding: 5px 10px 5px 0px;
+  background-color: #1a1a1a;
+  transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+}
+.page-sidebar > ul.side-nav > li.side-nav-selection > a {
+  text-align: right;
+  padding: 0;
+  color: white;
+  background-color: transparent;
+}
+.page-sidebar > ul.side-nav > li.side-nav-selection > a:hover,
+.page-sidebar > ul.side-nav > li.side-nav-selection > afocus {
+  background-color: transparent;
+}
+.page-sidebar > ul.side-nav > li.side-nav-selection.active {
+  margin-right: 0;
+  background-color: #21bbff;
+}
+.page-sidebar > ul.side-nav > li.side-nav-selection:hover,
+.page-sidebar > ul.side-nav > li.side-nav-selection:focus {
+  margin-right: 20px;
+  background-color: #ff2583;
+}
+.page-content-area {
+  position: relative;
+  padding-left: 120px;
+}
+.page-content-area .page-content {
+  border-left: 1px solid #d3d3d3;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 20px 0;
+}
+.page-content-area .page-content .detail-head {
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: #212121;
+}
+.page-content-area .page-content .detail-head span {
+  font-size: 18px;
+  color: white;
+}
+.page-content-area .page-content .detail-info {
+  margin-left: 30px;
+  padding-bottom: 5px;
+  border-left: 1px solid #1b1b1b;
+}
+.page-content-area .page-content .detail-info > h2 {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 5px 0;
+  padding: 5px 100px 5px 5px;
+  color: white;
+  font-size: 15px;
+  background-color: #212121;
+}
+.page-content-area .page-content .detail-info > p {
+  margin: 0 0 0 5px;
+  font-size: 13px;
 }
 /*# sourceMappingURL=bootstrapRedefine.css.map */

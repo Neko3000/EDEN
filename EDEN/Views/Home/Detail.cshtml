@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout-Normal.cshtml";
+    ViewBag.Title = "Detail";   
+}
+
+<nav id="spy" class="page-sidebar">
+    <ul class="nav side-nav">
+        @{
+            string[] wordLines = { "あ", "か", "さ", "た", "な", "は", "ま", "や", "ら", "わ" };
+            for (var i = 0; i < 10; i++)
+            {
+                <li class="side-nav-selection">
+                    <a href="#line-@(i+1)" data-scroll=""><span>@(wordLines[i])</span></a>
+                </li>
+            }
+        }
+    </ul>
+</nav>
+
+
+
+<div class="page-content-area">
+    <div class="page-content" data-spy="scroll" data-target="#spy">
+        <div id="line-1" class="detail-head">
+            <span>あ行</span>
+        </div>
+        <div class="detail-info">
+            <h2>エリア</h2>
+            <p>メイドのさんのエリアです！</p>
+        </div>
+        <div class="blanket"></div>
+        <div id="line-2" class="detail-head">
+            <span>か行</span>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $('body').scrollspy({ target: '#spy', offset: 0 });
+    </script>
+}

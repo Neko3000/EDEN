@@ -21,6 +21,10 @@ namespace EDEN.Controllers
             ViewBag.ClientLanguage = Request.UserLanguages[0];
             return View();
         }
+        public ActionResult Detail()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
