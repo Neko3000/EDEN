@@ -1,14 +1,16 @@
-﻿
+﻿@using System.Xml;
 @{
     Layout = "~/Views/Shared/_Layout-Normal.cshtml";
-    ViewBag.Title = "Detail";   
+    ViewBag.Title = "Detail";
+
+
 }
 
 <nav id="spy" class="page-sidebar">
     <ul class="nav side-nav">
         @{
             string[] wordLines = { "あ", "か", "さ", "た", "な", "は", "ま", "や", "ら", "わ" };
-            for (var i = 0; i < 10; i++)
+            for (var i = 0; i < wordLines.Count(); i++)
             {
                 <li class="side-nav-selection">
                     <a href="#line-@(i+1)" data-scroll=""><span>@(wordLines[i])</span></a>
@@ -18,10 +20,38 @@
     </ul>
 </nav>
 
-
-
 <div class="page-content-area">
     <div class="page-content" data-spy="scroll" data-target="#spy">
+        @{
+            XmlDocument doc = new XmlDocument();
+            doc.Load(Server.MapPath("~/App_Data/details.xml"));
+            XmlNode root = doc.SelectSingleNode("detail-data");
+
+            XmlNodeList keywordGroupList = root.ChildNodes;
+
+            int groupNumber=1;
+            
+            foreach (XmlNode singleGroup in keywordGroupList)
+            {
+                XmlNode groupName = singleGroup.FirstChild;
+                XmlNode infoList = singleGroup.LastChild;
+
+                <div id="line-@groupNumber.ToString()" class="detail-head">
+                    <span>@groupName.InnerText</span>
+                </div>
+
+                XmlNodeList infoBlocks = infoList.ChildNodes;
+                foreach (XmlNode singleBlock in infoBlocks)
+                {
+                    <div class="detail-info">
+                        <h2>@singleBlock.FirstChild.InnerText</h2>                   
+                        <p>@singleBlock.LastChild.InnerText</p>
+                    </div>
+                }
+                groupNumber++;
+            }
+            }
+        <!--
         <div id="line-1" class="detail-head">
             <span>あ行</span>
         </div>
@@ -33,6 +63,7 @@
         <div id="line-2" class="detail-head">
             <span>か行</span>
         </div>
+            -->
     </div>
 </div>
 
