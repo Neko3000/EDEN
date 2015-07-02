@@ -3,7 +3,6 @@
     Layout = "~/Views/Shared/_Layout-Normal.cshtml";
     ViewBag.Title = "Detail";
 
-
 }
 
 <nav id="spy" class="page-sidebar">
@@ -29,8 +28,8 @@
 
             XmlNodeList keywordGroupList = root.ChildNodes;
 
-            int groupNumber=1;
-            
+            int groupNumber = 1;
+
             foreach (XmlNode singleGroup in keywordGroupList)
             {
                 XmlNode groupName = singleGroup.FirstChild;
@@ -44,13 +43,13 @@
                 foreach (XmlNode singleBlock in infoBlocks)
                 {
                     <div class="detail-info">
-                        <h2>@singleBlock.FirstChild.InnerText</h2>                   
-                        <p>@singleBlock.LastChild.InnerText</p>
+                        <h2>@singleBlock.FirstChild.InnerText</h2>
+                        <p>@Html.Raw(singleBlock.LastChild.InnerText)</p>
                     </div>
                 }
                 groupNumber++;
             }
-            }
+        }
         <!--
         <div id="line-1" class="detail-head">
             <span>あ行</span>

@@ -7,7 +7,12 @@
       
       <info-block>
         <name>エリア</name>
-        <describe>エリアです！</describe>
+        <describe><![CDATA[エリアです！<a href="">click</a>]]> </describe>
+      </info-block>
+
+      <info-block>
+        <name>稲葉</name>
+        <describe>こちらは稲葉</describe>
       </info-block>
       
     </infolist>

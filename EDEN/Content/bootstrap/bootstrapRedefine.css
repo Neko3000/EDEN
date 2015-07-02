@@ -7456,6 +7456,7 @@ li a:focus {
 }
 .page-content-area .page-content .detail-info {
   margin-left: 30px;
+  margin-bottom: 20px;
   padding-bottom: 5px;
   border-left: 1px solid #1b1b1b;
 }
